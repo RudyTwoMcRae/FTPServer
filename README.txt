@@ -30,3 +30,9 @@ Examples:
 		users home folder with 701 permissions.
 
 
+
+
+
+vsftpd.conf
+
+The config file for vsftpd.  The only change is to allow users to read and write to their home directory when connected through ftp.

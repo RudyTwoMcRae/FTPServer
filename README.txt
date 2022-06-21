@@ -36,3 +36,26 @@ Examples:
 vsftpd.conf
 
 The config file for vsftpd.  The only change is to allow users to read and write to their home directory when connected through ftp.
+
+
+
+
+
+
+COMMANDS TO RUN WHEN SETTING UP NEW FTP SERVER
+________________________________________________
+
+sudo apt update
+sudo apt upgrade
+sudo apt install vim
+sudo apt install vsftpd
+
+sudo groupadd ftpusers
+sudo groupadd ftpadmins
+sudo usermod -a -G ftpadmins rudy
+mkdir /home/rudy/bin/
+PATH=PATH:/home/rudy/bin
+
+add /home/rudy/bin to the secure_path variable in the /etc/sudoers file using VIM.
+
+

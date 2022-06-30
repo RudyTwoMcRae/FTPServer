@@ -49,6 +49,7 @@ sudo apt update
 sudo apt upgrade
 sudo apt install vim
 sudo apt install vsftpd
+sudo apt install samba
 
 sudo groupadd ftpusers
 sudo groupadd ftpadmins

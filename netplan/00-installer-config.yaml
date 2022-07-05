@@ -1,0 +1,20 @@
+#McRae Network and External Network
+#
+network:
+  ethernets:
+    eth0:
+      dhcp4: yes
+      link-local: [ipv4]
+    eth1:
+      dhcp4: no
+      addresses:
+        - 64.40.244.120/28
+      routes: 
+        - to: 0.0.0.0/0
+          via: 64.40.244.113
+          metric: 600
+      nameservers:
+        addresses: [205.151.128.129, 205.151.129.221]
+      link-local: [ipv4]
+  version: 2
+  renderer: networkd
